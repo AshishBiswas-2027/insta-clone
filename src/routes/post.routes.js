@@ -10,6 +10,8 @@ postRouter.post("/", upload.single("image"),identifyUser, postController.createP
 
 postRouter.get("/", identifyUser,postController.getPostController)
 
-postRouter.get("/details/:postId",identifyUser, postController.getPostDetailsController)
+postRouter.get("/details/:postId", identifyUser, postController.getPostDetailsController)
+
+postRouter.post("/like/:postId",identifyUser,postController.likePostController)
 
 module.exports = postRouter
