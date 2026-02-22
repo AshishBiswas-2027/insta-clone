@@ -75,4 +75,4 @@ async function unfollowUserController(req, res) {
 
 
 
-module.exports = {followUserController}
+module.exports = {followUserController,unfollowUserController}
